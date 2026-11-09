@@ -14,7 +14,7 @@
 | GitHub 活動 | 2020-10-05 後無 commit；相對上游只有 2 個自有 commit；無 PR、release、Actions | 已查核，細節記錄於內部調查報告 |
 | org 內程式碼引用 | private repo `question-frame-api` 依賴本 fork；其他 repo 使用的是 npm registry 上的套件 | 已查核，細節記錄於內部調查報告 |
 | GCP 部署 | 本 repo 無部署；依賴方正式環境部署近期成功 | 已查核，細節記錄於內部調查報告 |
-| AWS 部署 | 查無；部分帳號的部分服務無權限查詢 | 已查核，細節記錄於內部調查報告 |
+| AWS 部署 | 查無 | 已查核，細節記錄於內部調查報告 |
 
 ### 待確認事項
 - 本 fork 停在上游 2020-09-14 版本且大幅落後上游；需由 `question-frame-api` 負責人決定是否改用上游 npm 發佈版本，改用後本 fork 即可封存。
