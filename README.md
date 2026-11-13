@@ -1,3 +1,25 @@
+## 使用情況調查（2026-11-09）
+
+> 本節為 hanlin-edu-tech repo 清理作業的調查紀錄，待負責人確認後決定封存或刪除。
+
+- 調查結論：仍在使用
+- 建議處置：保留，理由：org 內 private repo `question-frame-api` 以 git 相依直接安裝本 fork，並打包本 fork 才有的建置產物，該 repo 近期仍有成功的正式環境部署。
+- 最後更新：pushedAt 2020-10-05；最後 commit `890e1be8` 2020-10-05 Sparrow.jang Remove a build folder.
+- 用途：上游 MathQuill 的 fork，相對上游只有 2 個自有 commit，內容是把 2020-09-14 版本的建置產物納入版控，供 org 內專案以 git 相依安裝；本身無部署。
+
+### 檢查結果
+
+| 檢查項目 | 結果 | 依據 |
+|---|---|---|
+| GitHub 活動 | 2020-10-05 後無 commit；相對上游只有 2 個自有 commit；無 PR、release、Actions | 已查核，細節記錄於內部調查報告 |
+| org 內程式碼引用 | private repo `question-frame-api` 依賴本 fork；其他 repo 使用的是 npm registry 上的套件 | 已查核，細節記錄於內部調查報告 |
+| GCP 部署 | 本 repo 無部署；依賴方正式環境部署近期成功 | 已查核，細節記錄於內部調查報告 |
+| AWS 部署 | 查無 | 已查核，細節記錄於內部調查報告 |
+
+### 待確認事項
+- 本 fork 停在上游 2020-09-14 版本且大幅落後上游；需由 `question-frame-api` 負責人決定是否改用上游 npm 發佈版本，改用後本 fork 即可封存。
+- 刪除本 fork 會使 `question-frame-api` 的安裝步驟失敗，處置前必須先完成上一項。
+
 # [MathQuill](http://mathquill.com)
 
 by [Han](http://github.com/laughinghan), [Jeanine](http://github.com/jneen), and [Mary](http://github.com/stufflebear) (<maintainers@mathquill.com>) [<img alt="slackin.mathquill.com" src="http://slackin.mathquill.com/badge.svg" align="top">](http://slackin.mathquill.com)
